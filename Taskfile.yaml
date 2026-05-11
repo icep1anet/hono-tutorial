@@ -1,0 +1,16 @@
+version: '3'
+
+tasks: 
+  docker-up:
+    aliases:
+      - up
+    cmds:
+      - docker compose up -d
+    silent: true
+
+  docker-exec:
+    aliases:
+      - exec
+    cmds:
+      - docker compose exec app bash
+    silent: true
